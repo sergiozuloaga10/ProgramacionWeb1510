@@ -1,0 +1,68 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+.foto-de-perfil {
+    background-image: url(https://www.xtrafondos.com/descargar.php?id=5927&resolucion=3840x2160);
+    width: 175px;
+    height: 175px;
+    background-size: 350px;
+    margin: 15px auto;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: 47% 25%;
+}
+
+.contenedor {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contenedor h1 {
+    text-align: center;
+}
+
+.contenedor .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    /* gap: 20px; */
+}
+
+.contenedor .grid .primer-parrafo{
+    grid-column: 1/3;
+}
+
+.contenedor .grid img {
+    width: 250px;
+    margin: 15px auto;
+}
+
+.contenedor .grid .segundo-parrafo {
+    grid-column: 1/4;
+}
+
+.contenedor .grid-2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.contenedor .grid-2 img{
+    max-width: 100%;
+    min-height: 100%;
+    opacity: .6;
+    transition: ease .5s;
+    object-fit: cover;
+}
+
+.contenedor .grid-2 img:hover{
+    opacity: 1;
+    scale: 1.1;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
